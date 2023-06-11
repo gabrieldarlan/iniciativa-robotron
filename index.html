@@ -172,12 +172,26 @@
               </div>
             </div>
           </div>
-          <input
-            type="submit"
-            value="Iniciar produção"
-            class="producao"
-            id="producao"
-          />
+          <div class="area-selecao">
+            <!-- <p id="p" class="producao">selectedIndex: 0</p> -->
+            <!-- <p id="p" class="producao"></p> -->
+
+            <select id="select" class="producao">
+              <option selected value="" disabled>Selecione a cor</option>
+              <option value="amarelo">Amarelo</option>
+              <option value="preto">Preto</option>
+              <option value="azul">Azul</option>
+              <option value="vermelho">Vermelho</option>
+              <option value="rosa">Rosa</option>
+            </select>
+
+            <input
+              type="submit"
+              value="Iniciar produção"
+              class="producao"
+              id="producao"
+            />
+          </div>
         </form>
       </section>
     </main>
