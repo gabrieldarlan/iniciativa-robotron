@@ -32,6 +32,40 @@ const pecas = {
   },
 };
 
+const selectElem = document.getElementById("select");
+const pElem = document.getElementById("p");
+
+// When a new <option> is selected
+selectElem.addEventListener("change", () => {
+  const index = selectElem.selectedIndex;
+  const valor = selectElem.value;
+
+  switch (valor) {
+    case "amarelo":
+      document.querySelector(".robo").src =
+        "../img/robotron/Robotron 2000 - Amarelo/Robotron 2000 - Amarelo.png";
+      break;
+    case "preto":
+      document.querySelector(".robo").src =
+        "../img/robotron/Robotron 2000 - Preto/Robotron 2000 - Preto.png";
+      break;
+    case "azul":
+      document.querySelector(".robo").src =
+        "../img/robotron/Robotron 2000 - Azul/Robotron 2000 - Azul.png";
+      break;
+    case "vermelho":
+      document.querySelector(".robo").src =
+        "../img/robotron/Robotron 2000 - Vermelho/Robotron 2000 - Vermelho.png";
+      break;
+    case "rosa":
+      document.querySelector(".robo").src =
+        "../img/robotron/Robotron 2000 - Rosa/Robotron 2000 - Rosa.png";
+      break;
+    default:
+      break;
+  }
+});
+
 const controle = document.querySelectorAll("[data-controle]");
 const estatisticas = document.querySelectorAll("[data-estatistica]");
 controle.forEach((elemento) => {
